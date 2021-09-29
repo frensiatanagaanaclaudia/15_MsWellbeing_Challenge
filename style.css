@@ -1,0 +1,23 @@
+nav {
+    background-color: lightskyblue;
+}
+
+a {
+    font-family: Helvetica;
+    font-weight: 400px;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+a:hover {
+    background-color: gainsboro;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: helvetica;
+    text-align: center;
+}
