@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+    <h1>OUR TEAM</h1>
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+          <img src="images/_105870457_harimau01.jpg" ><br><br>
+          <div class="text">Nurrahmi Ardani Risqy</div>
+          <p class="job">Front End Engineer </p>
+          <p class="job">It is a waste of energy when we try to conform to a pattern. To conserve energy we must be aware of how we dissipate energy. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id earum nobis at quia magnam voluptatum itaque ipsam nam adipisci expedita est quae iste autem praesentium minus maiores, ipsa reiciendis alias!</p>
+        </div>
+        
+        <div class="mySlides">
+          <img src="images/5dea387e25f38.jpg" ><br><br>
+          <div class="text">Frensia Tanaga Anaclaudia</div>
+          <p class="job">Back End Engineer</p>
+          <p class="job">It is a waste of energy when we try to conform to a pattern. To conserve energy we must be aware of how we dissipate energy. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id earum nobis at quia magnam voluptatum itaque ipsam nam adipisci expedita est quae iste autem praesentium minus maiores, ipsa reiciendis alias!</p>
+        </div>
+        
+        <div class="mySlides">
+          <img src="images/50 Minimalist Desktop Wallpapers and Backgrounds (2021 Edition).png" ><br><br>
+          <div class="text">Dinda Viera Nursabrina</div>
+          <p class="job">Database Engineer</p>
+          <p class="job">It is a waste of energy when we try to conform to a pattern. To conserve energy we must be aware of how we dissipate energy. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id earum nobis at quia magnam voluptatum itaque ipsam nam adipisci expedita est quae iste autem praesentium minus maiores, ipsa reiciendis alias!</p>
+        </div>
+
+        <div class="mySlides">
+            <img src="images/AAAAAAAAAAA.jpg" ><br><br>
+            <div class="text">Raihan Zhaky Al-hafizhy</div>
+            <p class="job">Quality Control</p>
+            <p class="job">It is a waste of energy when we try to conform to a pattern. To conserve energy we must be aware of how we dissipate energy. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id earum nobis at quia magnam voluptatum itaque ipsam nam adipisci expedita est quae iste autem praesentium minus maiores, ipsa reiciendis alias!</p>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>
