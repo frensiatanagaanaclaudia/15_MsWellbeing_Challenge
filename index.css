@@ -1,6 +1,38 @@
-
-html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
-#wrapper {
-     width: 800px;
-     margin: 0 auto;
+li{
+    list-style: none;
 }
+
+html, body, h3{font-family: "Open Sans", sans-serif}
+
+h3{
+    text-align: center;
+}
+
+html, body {
+     height: 100%;
+ }
+ 
+ html {
+     display: table;
+     margin: auto;
+ }
+ 
+ body {
+     display: table-cell;
+     vertical-align: middle;
+ }
+button {
+    display:flex;
+  flex-direction: row;
+}
+
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+button {
+   display:flex;
+ flex-direction: row;
+}
+
